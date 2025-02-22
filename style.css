@@ -1,0 +1,331 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffffe3;
+    overflow-x: hidden;
+    position: relative;
+    height: 150vh;
+    background-image: url("https://i.pinimg.com/736x/a3/ef/90/a3ef9005dcaab5685ba8596a8ff5e7a1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -9;
+    pointer-events: none;
+}
+header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: 500;
+    color: #a487da;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+header .logo:hover {
+    color: #fff;
+}
+
+header nav a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.hero {
+    background: linear-gradient(to right, rgba(26, 21, 36, 0.8), rgba(26, 21, 36, 0.2)),  url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 180px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4.5em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1.2s ease-out;
+    letter-spacing: 1.5px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #ccc;
+    animation: fadeIn 1.7s ease-out;
+    line-height: 1.7;
+}
+
+.button {
+    background: linear-gradient(to right, #b48ead, #6d4a7e);
+    color: #fff;
+    padding: 16px 35px;
+    text-decoration: none;
+    border-radius: 35px;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeInUp 1.2s ease-out;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Секция "Услуги" */
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background: #15111e;
+    box-shadow: 0 -7px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.services h2 {
+    font-size: 3.5em;
+    margin-bottom: 60px;
+    color: #d8b4fe;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1.2px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.service-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service {
+    width: 380px;
+    padding: 35px;
+    margin-bottom: 40px;
+    background: linear-gradient(to bottom, #2c133d5d, #2c133d5d);
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(224, 169, 247, 0.658);
+    border: 1px solid rgba(224, 169, 247, 0.658);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0 20px rgba(224, 169, 247, 0.658);
+}
+
+.service img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
+    filter: none;
+}
+
+.service img:hover {
+    transform: scale(1.07);
+}
+
+.service h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #63a6e4;
+    text-shadow: 0 0 8px #000000;
+    font-weight: 500;
+}
+
+.service p {
+    font-size: 1.2em;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.contacts {
+    padding: 80px 0;
+    text-align: center;
+    background: #1a1524;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.contacts h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #d8b4fe;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1.2px;
+}
+
+.contacts p {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ddd;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1em;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contact-link svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover svg {
+    transform: scale(1.1);
+}
+
+.discord-icon {
+  filter: drop-shadow(0 0 5px #8ea3f0);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 0;
+    font-size: 1em;
+    color: #999;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.footer-copyright a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-copyright a:hover {
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .hero {
+        padding: 120px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%;
+    }
+}

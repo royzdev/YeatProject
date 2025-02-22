@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YeatProject - Плагины</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            width: 350px;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .item p {
+            font-size: 1.1em;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .empty-message {
+            text-align: center;
+            font-size: 1.5em;
+            color: #ccc;
+            padding: 50px;
+        }
+
+        .download-button {
+            background: linear-gradient(to right, #519fe7, #519fe760);
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        }
+        .build-price {
+            font-size: 1.2em;
+            color: #69b4fa;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .discounted-price {
+            text-decoration: line-through;
+            color: #919191b4;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">YeatProject</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Проекты</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Плагины</h2>
+
+        <div class="item-container">
+            <div class="item">
+                <h3>YeatCastle</h3>
+                <p>Уникальные шалкера, с [HolyWorld].</p>
+                <div class="empty-message">В разработке...</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
